@@ -26,7 +26,7 @@ int main(int argc, char* argv[])
 	}
 	
 	// ternary operator
-	myStruct ? str_ptr = myStruct->str : str_ptr = "";
+	myStruct != nullptr ? str_ptr = myStruct->str : str_ptr = "";
 
 	return 0;
 }
