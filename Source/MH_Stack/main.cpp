@@ -1,4 +1,5 @@
 #include <iostream>
+#include <algorithm>
 #include "MH_Stack.h"
 
 using namespace std;
@@ -8,10 +9,11 @@ void main()
 	// 캐릭터 스택 테스트
 	MH_Stack<char> charStack(10);
 	charStack.Push('A');
-	cout<<charStack.Pop()<<endl;
+	cout<<*charStack.Top()<<endl;
 
 	// 인트 스택 테스트
 	MH_Stack<int> intStack(2);
+	
 	for (int i = 0; i < 3; i++)
 	{
 		// 스택 풀 테스트
