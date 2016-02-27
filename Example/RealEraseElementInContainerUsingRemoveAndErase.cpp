@@ -7,12 +7,12 @@
 using namespace std;
 
 template <class T>
-void print_container(T SomeContainer, string str) {
-	cout<<"=============="<<str<<"=============="<<endl;
-	cout<<"[INFO] Container size = "<<SomeContainer.size()<<endl;
+void print_container(T& SomeContainer, string str) {
+	cout << "==============" << str << "==============" << endl;
+	cout << "[INFO] Container size = " << SomeContainer.size() << endl;
 	long long count = 1;
-	for each (auto i  in SomeContainer) { cout<< count++ <<"th value = " << i << endl; } 
-	cout<<endl;
+	for each (auto i  in SomeContainer) { cout << count++ << "th value = " << i << endl; }
+	cout << endl;
 }
 
 int main(int argc, const char* argv[])
@@ -21,7 +21,7 @@ int main(int argc, const char* argv[])
 	const int VEC_SIZE = 10;
 	intVec.reserve(VEC_SIZE);
 
-	for	(int i = 0; i < VEC_SIZE; i++) {
+	for (int i = 0; i < VEC_SIZE; i++) {
 		intVec.push_back(i / 2);
 	}
 
