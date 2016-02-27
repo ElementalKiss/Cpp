@@ -20,6 +20,9 @@ int main()
 	intList.remove(2);
 	print_container_console(intList, "delete 2");
 
+
+	test();
+
 	return 0;
 }
 

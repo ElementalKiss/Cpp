@@ -8,6 +8,8 @@ namespace MH_UTIL
 {
 	namespace STL
 	{
+		void test();
+
 		template <class T>
 		void print_container_console(const T& container) 
 		{
