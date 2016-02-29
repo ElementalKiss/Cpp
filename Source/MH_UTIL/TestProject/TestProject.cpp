@@ -7,21 +7,35 @@
 int main()
 {
 	using namespace MH_UTIL::STL;
-	vector<int> intVec;
-	simple_init_push_back(intVec, 1, 2, 3, 4, 5);
-	list<int> intList;
-	simple_init_push_back(intList, 1, 2, 3, 4, 5);
+	using namespace MH_UTIL::ETC;
 
-	print_container_console(intVec, "vector init");
-	erase_element(intVec, 2);
-	print_container_console(intVec, "delete 2");
+	{
+		some_line("Vector Test");
+		vector<int> intVec;
+		simple_init_push_back(intVec, 1, 2, 3, 4, 5);
+		list<int> intList;
+		simple_init_push_back(intList, 1, 2, 3, 4, 5);
 
-	print_container_console(intList, "list init");
-	intList.remove(2);
-	print_container_console(intList, "delete 2");
+		print_container_console(intVec, "vector init");
+		erase_element(intVec, 2);
+		print_container_console(intVec, "delete 2");
 
+		print_container_console(intList, "list init");
+		intList.remove(2);
+		print_container_console(intList, "delete 2");
+	}
 
-	test();
+	{
+		some_line("Array Size Test");
+		// array_size Test
+		int keyVals[] = { 1, 2, 3 };
+		int mappedVals1[array_size(keyVals)];
+		array<int, array_size(keyVals)> mappedVals2;
+
+		cout << "mappedVals1 size = " << sizeof(mappedVals1) / sizeof(mappedVals1[0]) << endl;
+		cout << "mappedVals2 size = " << mappedVals2.size() << endl;
+	
+	}
 
 	return 0;
 }

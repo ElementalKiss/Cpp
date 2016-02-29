@@ -1,15 +1,9 @@
 #pragma once
-#include <iostream>
-#include <algorithm>
-#include <vector>
-#include <typeinfo>
 
 namespace MH_UTIL
 {
 	namespace STL
 	{
-		void test();
-
 		template <class T>
 		void print_container_console(const T& container) 
 		{
@@ -51,6 +45,14 @@ namespace MH_UTIL
 		}
 	};
 
+	namespace ETC
+	{
+		void some_line();
+		void some_line(const string msg);
+
+		template <class T, size_t N>
+		constexpr size_t array_size(T(&)[N]) noexcept { return N; }
+	};
 
 	namespace SMART_PTR
 	{

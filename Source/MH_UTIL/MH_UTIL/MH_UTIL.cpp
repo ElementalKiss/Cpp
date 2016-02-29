@@ -4,7 +4,12 @@
 #include "stdafx.h"
 #include "MH_UTIL.h"
 
-void MH_UTIL::STL::test()
+void MH_UTIL::ETC::some_line()
 {
-	return;
+	cout << "==============================" << endl;
+}
+
+void MH_UTIL::ETC::some_line(const string msg)
+{
+	cout << "==========[" << msg << "]==========" << endl;
 }
