@@ -76,8 +76,8 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>D:\Work\cpp\Source\MH_UTIL\MH_UTIL;$(IncludePath)</IncludePath>
-    <LibraryPath>D:\Work\cpp\Source\MH_UTIL\x64\Debug;$(LibraryPath)</LibraryPath>
+    <IncludePath>..\MH_UTIL;$(IncludePath)</IncludePath>
+    <LibraryPath>..\x64\Debug;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
