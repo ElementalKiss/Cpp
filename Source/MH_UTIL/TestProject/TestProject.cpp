@@ -23,6 +23,16 @@ int main()
 		print_container_console(intList, "list init");
 		intList.remove(2);
 		print_container_console(intList, "delete 2");
+
+		vector<int> capacityCheckVec;
+		capacityCheckVec.resize(100);
+		capacityCheckVec.at(0) = 1;
+		MH_UTIL::STL::erase_element(capacityCheckVec, 0);
+		cout << "capacityCheckVec size = " <<capacityCheckVec.size() << endl;
+		cout << "capacityCheckVec capacity = " << capacityCheckVec.capacity() << endl;
+		shrink_vector(capacityCheckVec);
+		cout << "execute shrink" << endl;
+		cout << "capacityCheckVec capacity = " << capacityCheckVec.capacity() << endl;
 	}
 
 	{
@@ -34,8 +44,9 @@ int main()
 
 		cout << "mappedVals1 size = " << sizeof(mappedVals1) / sizeof(mappedVals1[0]) << endl;
 		cout << "mappedVals2 size = " << mappedVals2.size() << endl;
-	
 	}
+
+
 
 	return 0;
 }

@@ -43,6 +43,12 @@ namespace MH_UTIL
 			T1 vec = { args... };
 			container = std::move(vec);
 		}
+
+		template <class T>
+		void shrink_vector(vector<T>& vec)
+		{
+			vector<T>(vec).swap(vec);
+		}
 	};
 
 	namespace ETC
