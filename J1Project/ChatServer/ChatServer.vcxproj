@@ -76,8 +76,13 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
+<<<<<<< Updated upstream
     <IncludePath>..\thirdparty\boost;$(IncludePath)</IncludePath>
     <LibraryPath>..\thirdparty\boost\lib;$(LibraryPath)</LibraryPath>
+=======
+    <IncludePath>..\_thirdparty\boost_1_60_0;$(IncludePath)</IncludePath>
+    <LibraryPath>..\_thirdparty\boost_1_60_0\stage\lib_64;$(LibraryPath)</LibraryPath>
+>>>>>>> Stashed changes
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
