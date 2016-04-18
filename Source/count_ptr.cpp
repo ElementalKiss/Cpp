@@ -1,6 +1,11 @@
 #pragma once 
+//<<<<<<< Updated upstream
 // test comment
  
+//=======
+
+// merge test 
+//>>>>>>> Stashed changes
 // counted_ptr
 template <class T>
 class counted_ptr 
